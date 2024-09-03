@@ -200,13 +200,97 @@ section.main .main-title .view:hover::after {
     width: 100%;
 }
 
+/* 각 section에 들어갈 디자인을 일괄 지정 */
+section .title {
+    text-align: center;
+}
+
+section .title h2 {
+    font-size: 45px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+section .title p {
+    font-size: 18px;
+    color: #555;
+}
+
+section .sub-container {
+    background: orange;
+    width: 74%;
+    margin: 0 auto;
+}
 
 
+/* -------------------section.about style---------------------------- */
+section.about {
+    background: tomato;
+    margin: 80px 0;
+}
 
+section.about .sub-container {
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
 
+section.about .sub-container li {
+    float: left;
+    width: 33.3333%;
+    box-sizing: border-box;
+    height: 510px;
+}
 
+section.about .sub-container li .img-box {
+    overflow: hidden;
+}
 
+section.about .sub-container li .img-box img {
+    width: 100%;
+    transition: 0.6s;
+}
 
+section.about .sub-container li a:hover .img-box img {
+    transform: scale(1.2);
+}
+
+section.about .sub-container li a .text {
+    padding: 25px;
+}
+
+section.about .sub-container li a .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section.about .sub-container li a .text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+section.about .sub-container li a .text p.more {
+    /* 일괄 대소문자 변경 <-> lowercase */
+    text-transform: uppercase;
+    font-weight: 700;
+
+    position: relative;
+    padding-left: 40px;
+}
+
+section.about .sub-container li a .text p.more::before {
+    content: '→';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    background: #ff8342;
+
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
 
 
 
